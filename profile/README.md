@@ -4,6 +4,8 @@
 
 We publish measured, bounded technical findings rather than claims inferred from compiler success, marketing specifications, or synthetic benchmarks.
 
+**Researcher:** [Nayte Wilson (ORCID iD 0009-0003-4026-8212)](https://orcid.org/0009-0003-4026-8212) — independent research attribution, not an institutional credential.
+
 **[Research home](https://macbrainslabs.org/)** | **[Research index](https://macbrainslabs.org/research/)** | **[Methods](https://macbrainslabs.org/methods/)** | **[Contact](mailto:research@macbrainslabs.org)**
 
 ## Selected research records
