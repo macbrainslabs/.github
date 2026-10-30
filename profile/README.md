@@ -14,6 +14,8 @@ We publish measured, bounded technical findings rather than claims inferred from
 | [LFM S2 numerical parity](https://macbrainslabs.org/notes/lfm-parity/) | 743/743 compute operations assigned to ANE, with both specified production outputs passing the declared parity gate | A separate 46-output diagnostic graph had only 34/46 ANE parity passes and is reported independently. |
 | [Qwen decode batch sweep](https://macbrainslabs.org/notes/decode-regimes/) | 45.4 (B=1), 68.1 (B=2), 102.1 (B=4), 125.8 (B=8) aggregate tokens/s | Five-round interleaved steady-state on the tested A18 Pro substrate. These are aggregate, shape-specific measurements. |
 
+**[Machine-readable ANE research records](https://github.com/macbrainslabs/ane-research-records):** source-pinned public summary tables, fingerprint metadata, and a verification script. These are derived summaries rather than private raw experiment files.
+
 ## Engineering method
 
 Our native workflow uses Swift/MIL authoring, Core ML graph compilation and inspection, numerical parity against specified fixtures, and explicit hardware-placement evidence. We retain falsified hypotheses, diagnostic divergences, and output-layout constraints rather than silently omitting them.
