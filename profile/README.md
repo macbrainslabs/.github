@@ -16,6 +16,10 @@ We publish measured, bounded technical findings rather than claims inferred from
 
 **[Machine-readable ANE research records](https://github.com/macbrainslabs/ane-research-records):** source-pinned public summary tables, fingerprint metadata, and a verification script. These are derived summaries rather than private raw experiment files.
 
+## Public implementation (distinct artifact)
+
+The [qwen2.5-ane Swift server](https://github.com/naytewilson/qwen2.5-ane) is a separately compiled, MIT-licensed public implementation with source provenance and [citation metadata](https://github.com/naytewilson/qwen2.5-ane/blob/main/CITATION.cff). Its published infer/prefill placement counts refer to a **different compiled artifact** than the 2,090 ANE / 79 CPU research-table observation above. It is not a full release of private ANE research fixtures.
+
 ## Engineering method
 
 Our native workflow uses Swift/MIL authoring, Core ML graph compilation and inspection, numerical parity against specified fixtures, and explicit hardware-placement evidence. We retain falsified hypotheses, diagnostic divergences, and output-layout constraints rather than silently omitting them.
