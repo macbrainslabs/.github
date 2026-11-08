@@ -16,7 +16,17 @@ We publish measured, bounded technical findings rather than claims inferred from
 | [LFM S2 numerical parity](https://macbrainslabs.org/notes/lfm-parity/) | 743/743 compute operations assigned to ANE, with both specified production outputs passing the declared parity gate | A separate 46-output diagnostic graph had only 34/46 ANE parity passes and is reported independently. |
 | [Qwen decode batch sweep](https://macbrainslabs.org/notes/decode-regimes/) | 45.4 (B=1), 68.1 (B=2), 102.1 (B=4), 125.8 (B=8) aggregate tokens/s | Five-round interleaved steady-state on the tested A18 Pro substrate. These are aggregate, shape-specific measurements on single-function probe artifacts; output quality was not validated. |
 
-**[Machine-readable ANE research records](https://github.com/macbrainslabs/ane-research-records):** source-pinned public summary tables, fingerprint metadata, and a verification script. The [v0.1.0 release](https://github.com/macbrainslabs/ane-research-records/releases/tag/v0.1.0) is archived under the verified [Zenodo version DOI 10.5281/zenodo.23798037](https://doi.org/10.5281/zenodo.23798037) ([all versions](https://doi.org/10.5281/zenodo.23798036)). These are derived summaries rather than private raw experiment files.
+## Published research records
+
+Each record is a tagged release of [macbrainslabs/ane-research-records](https://github.com/macbrainslabs/ane-research-records) with its own Zenodo version DOI, under the all-versions DOI [10.5281/zenodo.23798036](https://doi.org/10.5281/zenodo.23798036). Current verification status for every record is on [Publications](https://macbrainslabs.org/publications/).
+
+| Version | Record | Scope as published | DOI |
+| :-- | :-- | :-- | :-- |
+| v0.3.0 | [ANERECore cross-repo MIL parity: tap, steer and functionWide](https://macbrainslabs.org/research/records/ane-record-b8f78a146608021d974dcdec/) | Same chip, single device. MIL text byte equality on one Qwen fixture; 10 of 10 counted runs pass across two clean-room arms. No Core ML compile, ANE execution or numerics claimed. | [10.5281/zenodo.24034510](https://doi.org/10.5281/zenodo.24034510) |
+| v0.2.0 | [LFM3-1.7B layer-14 diagnostic under Core ML `cpuAndNeuralEngine`](https://macbrainslabs.org/research/records/ane-record-c188def1e88a0d94018dfe99/) | Same chip, single device (A18 Pro). ANE execution inferred from compute-plan placement; 8 executions disclosed, 5 counted. | [10.5281/zenodo.23905811](https://doi.org/10.5281/zenodo.23905811) |
+| v0.1.0 | [Public measurement summaries](https://github.com/macbrainslabs/ane-research-records/releases/tag/v0.1.0) | Source-pinned summary tables, fingerprint metadata and a verification script; derived summaries, not private raw experiment files. | [10.5281/zenodo.23798037](https://doi.org/10.5281/zenodo.23798037) |
+
+v0.2.0 and v0.3.0 were each released only after a final reviewer INCLUDE on their exact package hash; the procedure is on the [methods page](https://macbrainslabs.org/methods/#review). Same-chip reruns are reported as repeatability, never as cross-device replication. No record claims novelty, and an archived DOI is not peer review.
 
 ## Public implementation (distinct artifact)
 
